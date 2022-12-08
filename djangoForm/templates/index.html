@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>CRM FORM</title>
 
     <link
       rel="stylesheet"
@@ -24,6 +24,7 @@
     ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   </head>
+
   <body>
     <div class="container">
       <div class="row my-5">
@@ -67,33 +68,36 @@
               <select
                 class="form-control"
                 id="complain"
-                name="cars"
+                name="complain"
                 style="display: none"
                 }
               >
-                <option value="complain">1</option>
-                <option value="assistance">2</option>
-                <option value="fiat">3</option>
-                <option value="audi">4</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
               </select>
             </div>
             <div class="col">
               <select
                 class="form-control"
                 id="assist"
-                name="cars"
+                name="assist"
                 style="display: none"
               >
-                <option value="complain">a</option>
-                <option value="assistance">b</option>
-                <option value="fiat">c</option>
-                <option value="audi">D</option>
+                <option value="a">a</option>
+                <option value="b">b</option>
+                <option value="c">c</option>
+                <option value="d">d</option>
               </select>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button id="submitbtn" type="submit" class="btn btn-primary">
+              Submit
+            </button>
           </form>
         </div>
       </div>
-    </div>
+      
+   
   </body>
 </html>
