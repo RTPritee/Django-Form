@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head></head>
+<style>
+  #MyForm {
+    display: none;
+    width: 300px;
+    border: 1px solid #ccc;
+    padding: 14px;
+    background: #ececec;
+  }
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $('#Mybtn').click(function () {
+      $('#MyForm').toggle(500);
+    });
+  });
+</script>
+<script>
+  $(function () {
+    $(".forms").hide();
+    $("#myselect").change(function () {
+      switch ($(this).val()) {
+        case "Model 1":
+          $(".forms").hide().parent().find("#Form1").show();
+          break;
+        case "Model 2":
+          $(".forms").hide().parent().find("#Form2").show();
+          break;
+      }
+    });
+  });
+</script>
+<body>
+  <h3>Successfully form submited</h3>
+<button id="Mybtn" class="btn btn-primary">Edit Your Details</button>
+<form id="MyForm" action="" method="post">
+  <label>Enter Name</label>
+  <input type="text" name="name" placeholder="Enter your name" /><br>
+  <label>Enter Email</label>
+  <input type="email" name="email" placeholder="Enter your email" /><br>
+  <label>Call Type</label>
+  <select id="myselect">
+    <option value="Model 1">No complain</option>
+    <option value="Model 2">Complain</option>
+  </select>
+  </div>
+
+</form>
+</div>
+<div id="Form2" class="forms">Form 2 Contents</div>
+<input type="button" class="btn btn-default" name="submit" value="Submit" />
+</div>
+</form>
+
+</body>
+</html>
